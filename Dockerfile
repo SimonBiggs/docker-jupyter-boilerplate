@@ -6,7 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y upgrade
 
-RUN apt-get -y install vim
+RUN apt-get -y install \
+    vim wget
 
 RUN pip install terminado --upgrade
 
